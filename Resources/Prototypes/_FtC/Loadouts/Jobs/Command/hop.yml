@@ -6,4 +6,4 @@
 - type: loadout
   id: JumpsuitHopAlt
   equipment:
-     Jumpskirt: ClothingUniformJumpsuitHopAlt
+     jumpsuit: ClothingUniformJumpsuitHopAlt
