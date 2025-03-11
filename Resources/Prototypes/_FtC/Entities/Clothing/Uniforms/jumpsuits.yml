@@ -132,3 +132,15 @@
       sprite: _FtC/Clothing/Uniforms/Jumpsuit/retrosec.rsi
     - type: Clothing
       sprite: _FtC/Clothing/Uniforms/Jumpsuit/retrosec.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitHopAlt
+  name: формальный комбинезон главы персонала
+  description: Этот комбинезон пахнет бумажной работой и чернилами от печатей и ручек.
+  components:
+    - type: Sprite
+      sprite: _FtC/Clothing/Uniforms/Jumpsuit/hopalt.rsi
+    - type: Clothing
+      sprite: _FtC/Clothing/Uniforms/Jumpsuit/hopalt.rsi
+      

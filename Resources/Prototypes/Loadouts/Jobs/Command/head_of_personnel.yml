@@ -28,6 +28,16 @@
   id: HoPJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoP
+    
+- type: loadout
+  id: JumpskirtHopAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHopAlt
+    
+- type: loadout
+  id: JumpsuitHopAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHopAlt
 
 # Head
 - type: loadout
@@ -68,3 +78,4 @@
   id: HoPWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHoP
+    

@@ -41,3 +41,14 @@
     sprite: _FtC/Clothing/Uniforms/Jumpskirt/chefcook.rsi
   - type: Clothing
     sprite: _FtC/Clothing/Uniforms/Jumpskirt/chefcook.rsi
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtHopAlt
+  name: формальное платье главы персонала
+  description: Это платье подчёркивает вашу важность в бюрократической грамматике.
+  components: 
+    - type: Sprite
+      sprite: _FtC/Clothing/Uniforms/Jumpskirt/hopskirt.rsi
+    - type: Clothing
+      sprite: _FtC/Clothing/Uniforms/Jumpskirt/hopskirt.rsi

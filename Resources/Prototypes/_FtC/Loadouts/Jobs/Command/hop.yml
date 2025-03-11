@@ -1,0 +1,9 @@
+- type: loadout
+  id: JumpskirtHopAlt
+  equipment:
+     jumpsuit: ClothingUniformJumpskirtHopAlt
+    
+- type: loadout
+  id: JumpsuitHopAlt
+  equipment:
+     Jumpskirt: ClothingUniformJumpsuitHopAlt

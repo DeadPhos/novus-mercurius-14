@@ -157,7 +157,9 @@
   loadouts:
   - HoPJumpsuit
   - HoPJumpskirt
-
+  - JumpsuitHopAlt
+  - JumpskirtHopAlt
+  
 - type: loadoutGroup
   id: HoPNeck
   name: loadout-group-hop-neck
