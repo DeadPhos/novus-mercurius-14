@@ -294,7 +294,7 @@
     Alexander: 3
 
 - type: reaction
-  id: Daiquiri
+  id: DaiquiriFtC
   reactants:
     Rum:
       amount: 4
@@ -332,7 +332,7 @@
     Negroni: 6
 
 - type: reaction
-  id: EspressoMartini
+  id: EspressoMartiniFtC
   reactants:
     BlackRussian:
       amount: 6
@@ -412,7 +412,7 @@
     MaiTai: 6
 
 - type: reaction
-  id: MoscowMule
+  id: MoscowMuleFtC
   reactants:
     Yorsh: # Must be ginger beer + vodka
       amount: 5

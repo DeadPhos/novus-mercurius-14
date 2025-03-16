@@ -27,6 +27,8 @@
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
     - BaseStationStockMarket # FtC-StockTrading
+    - BaseStationDeliveries
+
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform

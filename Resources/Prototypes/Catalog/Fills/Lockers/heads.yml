@@ -19,7 +19,8 @@
     - id: RubberStampQm
     - id: AstroNavCartridge
     - id: StockTradingCartridge # FtC-StockTrading
-   
+    - id: MailTeleporterMachineCircuitboard
+
 - type: entity
   id: LockerQuarterMasterFilled
   suffix: Filled
