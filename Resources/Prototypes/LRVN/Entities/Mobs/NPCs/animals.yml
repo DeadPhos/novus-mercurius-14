@@ -43,7 +43,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       sprite: LRVN/Mobs/Animals/goblin.rsi
-      state: kobold
+      state: goblin
     - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
