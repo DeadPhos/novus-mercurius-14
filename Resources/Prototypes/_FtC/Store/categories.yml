@@ -1,0 +1,21 @@
+
+# Syndi Mechs
+- type: storeCategory
+  id: _FtCUplinkMechMechs
+  name: uplink-syndimech-mechs
+  priority: 1
+
+- type: storeCategory
+  id: _FtCUplinkMechWeapon
+  name: uplink-syndimech-weapon
+  priority: 2
+
+- type: storeCategory
+  id: _FtCUplinkMechEquipment
+  name: uplink-syndimech-equipment
+  priority: 3
+
+- type: storeCategory
+  id: _FtCUplinkMechAmmo
+  name: uplink-syndimech-ammo
+  priority: 4

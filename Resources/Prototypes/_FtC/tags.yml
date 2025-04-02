@@ -1,0 +1,154 @@
+
+#mech_gygax
+
+- type: Tag
+  id: _FtCGygaxCentralControlModule
+
+- type: Tag
+  id: _FtCGygaxPeripheralsControlModule
+
+- type: Tag
+  id: _FtCGygaxLArm
+
+- type: Tag
+  id: _FtCGygaxLLeg
+
+- type: Tag
+  id: _FtCGygaxRLeg
+
+- type: Tag
+  id: _FtCGygaxRArm
+
+- type: Tag
+  id: _FtCGygaxArmor
+
+- type: Tag
+  id: _FtCGygaxHead
+
+#mech_clarke
+
+- type: Tag
+  id: _FtCClarkeCentralControlModule
+
+- type: Tag
+  id: _FtCClarkePeripheralsControlModule
+
+- type: Tag
+  id: _FtCClarkeLArm
+
+- type: Tag
+  id: _FtCClarkeRArm
+
+- type: Tag
+  id: _FtCClarkeLTread
+
+- type: Tag
+  id: _FtCClarkeRTread
+
+- type: Tag
+  id: _FtCClarkeHead
+
+#mech_durand
+
+- type: Tag
+  id: _FtCDurandCentralControlModule
+
+- type: Tag
+  id: _FtCDurandPeripheralsControlModule
+
+- type: Tag
+  id: _FtCDurandLArm
+
+- type: Tag
+  id: _FtCDurandLLeg
+
+- type: Tag
+  id: _FtCDurandRLeg
+
+- type: Tag
+  id: _FtCDurandRArm
+
+- type: Tag
+  id: _FtCDurandArmor
+
+- type: Tag
+  id: _FtCDurandHead
+
+#odysseus
+
+- type: Tag
+  id: _FtCOdysseusCentralControlModule
+
+- type: Tag
+  id: _FtCOdysseusPeripheralsControlModule
+
+- type: Tag
+  id: _FtCOdysseusLArm
+
+- type: Tag
+  id: _FtCOdysseusLLeg
+
+- type: Tag
+  id: _FtCOdysseusRLeg
+
+- type: Tag
+  id: _FtCOdysseusRArm
+
+- type: Tag
+  id: _FtCOdysseusArmor
+
+- type: Tag
+  id: _FtCOdysseusHead
+
+#phazon
+
+- type: Tag
+  id: _FtCPhazonCentralControlModule
+
+- type: Tag
+  id: _FtCPhazonPeripheralsControlModule
+
+- type: Tag
+  id: _FtCPhazonWeaponControlModule
+
+- type: Tag
+  id: _FtCPhazonLArm
+
+- type: Tag
+  id: _FtCPhazonLLeg
+
+- type: Tag
+  id: _FtCPhazonRLeg
+
+- type: Tag
+  id: _FtCPhazonRArm
+
+- type: Tag
+  id: _FtCPhazonArmor
+
+- type: Tag
+  id: _FtCPhazonHead
+
+#ripley_mk2
+
+- type: Tag
+  id: _FtCRipleyMk2ModificationKit
+
+#mech general
+- type: Tag
+  id: _FtCMechEquipmentGeneral
+
+- type: Tag
+  id: _FtCMechEquipmentMed
+
+- type: Tag
+  id: _FtCMechEquipmentService
+
+- type: Tag
+  id: _FtCMechEquipmentIndustrial
+
+- type: Tag
+  id: _FtCMechEquipmentSec
+
+- type: Tag
+  id: _FtCMechEquipmentClown

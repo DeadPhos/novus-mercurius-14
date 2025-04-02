@@ -1,0 +1,19 @@
+- type: latheCategory
+  id: _FtCMechGygax
+  name: lathe-category-mechs-gygax
+
+- type: latheCategory
+  id: _FtCMechOdysseus
+  name: lathe-category-mechs-odysseus
+
+- type: latheCategory
+  id: _FtCMechClarke
+  name: lathe-category-mechs-clarke
+
+- type: latheCategory
+  id: _FtCMechDurand
+  name: lathe-category-mechs-durand
+
+- type: latheCategory
+  id: _FtCMechPhazon
+  name: lathe-category-mechs-phazon

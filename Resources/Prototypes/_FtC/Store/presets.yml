@@ -1,0 +1,13 @@
+- type: entity
+  id: _FtCStorePresetUplinkSyndiMech
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - _FtCUplinkMechMechs
+    - _FtCUplinkMechWeapon
+    - _FtCUplinkMechEquipment
+    - _FtCUplinkMechAmmo
+    currencyWhitelist:
+    - Telecrystal

@@ -1,0 +1,274 @@
+- type: technology
+  id: _FtCGygaxTechnology
+  name: research-technology-mech-gygax
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: gygax
+  discipline: Mech
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - _FtCGygaxHarness
+  - _FtCGygaxLArm
+  - _FtCGygaxRArm
+  - _FtCGygaxLLeg
+  - _FtCGygaxRLeg
+  - _FtCGygaxArmorPlates
+  - _FtCGygaxHead
+  - _FtCGygaxCentralElectronics
+  - _FtCGygaxPeripheralsElectronics
+  position: 3,0
+  requiredTech:
+  - _FtCOdysseusTechnology
+
+- type: technology
+  id: _FtCOdysseusTechnology
+  name: research-technology-mech-odysseus
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: odysseus
+  discipline: Mech
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - _FtCOdysseusHarness
+  - _FtCOdysseusLArm
+  - _FtCOdysseusRArm
+  - _FtCOdysseusLLeg
+  - _FtCOdysseusRLeg
+  - _FtCOdysseusHead
+  - _FtCOdysseusCentralElectronics
+  - _FtCOdysseusPeripheralsElectronics
+  position: 2,0
+  requiredTech:
+  - _FtCClarkeTechnology
+
+# - type: technology
+#   id: _FtCMedgunTechnology
+#   name: _FtC-research-technology-mech-medgun
+#   icon:
+#     sprite: Objects/Specific/Mech/mecha_equipment.rsi
+#     state: mecha_medigun
+#   discipline: CivilianServices
+#   tier: 3
+#   cost: 25000
+#   recipeUnlocks:
+#   - _FtCMechGunMedigun
+
+- type: technology
+  id: _FtCClarkeTechnology
+  name: research-technology-mech-clarke
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: clarke
+  discipline: Mech
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - _FtCClarkeHarness
+  - _FtCClarkeLArm
+  - _FtCClarkeRArm
+  - _FtCClarkeLTread
+  - _FtCClarkeRTread
+  - _FtCClarkeHead
+  - _FtCClarkeCentralElectronics
+  - _FtCClarkePeripheralsElectronics
+  position: 1,0
+  requiredTech:
+  - RipleyAPLU
+
+- type: technology
+  id: _FtCDurandTechnology
+  name: research-technology-mech-durand
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: durand
+  discipline: Mech
+  tier: 2
+  cost: 12500
+  recipeUnlocks:
+  - _FtCDurandHarness
+  - _FtCDurandLArm
+  - _FtCDurandRArm
+  - _FtCDurandLLeg
+  - _FtCDurandRLeg
+  - _FtCDurandHead
+  - _FtCDurandArmorPlates
+  - _FtCDurandCentralElectronics
+  - _FtCDurandPeripheralsElectronics
+  position: 4,1
+  requiredTech:
+  - _FtCMechTechnologyArmor
+
+- type: technology
+  id: _FtCPhazonTechnology
+  name: research-technology-mech-phazon
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: phazon
+  discipline: Mech
+  tier: 3
+  cost: 25000
+  recipeUnlocks:
+  - _FtCPhazonHarness
+  - _FtCPhazonLArm
+  - _FtCPhazonRArm
+  - _FtCPhazonLLeg
+  - _FtCPhazonRLeg
+  - _FtCPhazonHead
+  - _FtCPhazonArmorPlates
+  - _FtCPhazonCentralElectronics
+  - _FtCPhazonPeripheralsElectronics
+  - _FtCPhazonWeaponControlElectronics
+  position: 4,0
+  requiredTech:
+  - _FtCDurandTechnology
+  - _FtCGygaxTechnology
+
+#technologies
+- type: technology
+  id: _FtCMechTechnologyCarrier
+  name: research-technology-mech-carrier
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_humanstealer
+  discipline: Mech
+  tier: 1
+  cost: 3500
+  recipeUnlocks:
+  - MechEquipmentHumanGrabber
+  position: 2,-1
+  requiredTech:
+  - _FtCOdysseusTechnology
+
+- type: technology
+  id: _FtCMechTechnologySleeper
+  name: research-technology-mech-sleeper
+  icon:
+    sprite: Structures/cryostorage.rsi
+    state: sleeper_0
+  discipline: Mech
+  tier: 2
+  cost: 3500
+  recipeUnlocks:
+  - MechEquipmentHumanSleeper
+  position: 2,-2
+  requiredTech:
+  - _FtCOdysseusTechnology
+
+- type: technology
+  id: _FtCMechTechnologyMedigun
+  name: research-technology-mech-medigun
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_medigun
+  discipline: Mech
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - _FtCMechGunMedigun
+  position: 2,1
+  requiredTech:
+  - _FtCOdysseusTechnology
+
+- type: technology
+  id: _FtCMechTechnologyCutters
+  name: research-technology-mech-cutters
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_plasmacutter
+  discipline: Mech
+  tier: 2
+  cost: 3500
+  recipeUnlocks:
+  - _FtCMechWeaponCutter
+  - _FtCBoxPlasmaBox
+  position: 1,1
+  requiredTech:
+  - _FtCClarkeTechnology
+
+- type: technology
+  id: _FtCMechTechnologyDrill
+  name: research-technology-mech-drill
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_drill
+  discipline: Mech
+  tier: 1
+  cost: 3500
+  recipeUnlocks:
+  - MechEquipmentDrill
+  position: 1,-1
+  requiredTech:
+  - _FtCClarkeTechnology
+
+- type: technology
+  id: _FtCMechTechnologyDrillDiamond
+  name: research-technology-mech-diamond-drill
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_diamond_drill
+  discipline: Mech
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - MechEquipmentDiamondDrill
+  position: 1,-2
+  requiredTech:
+  - _FtCMechTechnologyDrill
+
+- type: technology
+  id: _FtCMechTechnologyArmor
+  name: research-technology-mech-armor
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_abooster_proj
+  discipline: Mech
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - MechEquipmentArmorMelee
+  - MechEquipmentArmorRange
+  position: 3,1
+  requiredTech:
+  - _FtCGygaxTechnology
+
+- type: technology
+  id: _FtCMechGunSmallTechnology
+  name: research-technology-mech-gun-small
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_scatter
+  discipline: Mech
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - _FtCMechGunScattershot
+  - _FtCMechGunUltraAC2
+  - _FtCBoxAmmoScattershot
+  - _FtCBoxAmmoAC2Ultra
+  - _FtCMechGunFNX99Hades
+  - _FtCBoxAmmoHades
+  position: 3,-1
+  requiredTech:
+  - _FtCGygaxTechnology
+
+- type: technology
+  id: _FtCMechGunHeavyTechnology
+  name: research-technology-mech-gun-heavy
+  icon:
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_missilerack_six
+  discipline: Mech
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - _FtCMechGunMHAR21
+  - _FtCMechGunSGL6
+#  - _FtCMechGunSRM8 Вырезано ради баланса
+  - _FtCMechGunBRM6
+  - _FtCBoxAmmoSniper
+  - _FtCBoxAmmoGranade
+  position: 3,-2
+  requiredTech:
+  - _FtCMechGunSmallTechnology

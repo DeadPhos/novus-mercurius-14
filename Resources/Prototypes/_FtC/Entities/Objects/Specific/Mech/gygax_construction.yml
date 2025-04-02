@@ -1,0 +1,154 @@
+- type: entity
+  id: _FtCBaseGygaxPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _FtC/Objects/Specific/Mech/gygax_construction.rsi
+
+- type: entity
+  id: _FtCBaseGygaxPartItem
+  parent: _FtCBaseGygaxPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: _FtCBaseGygaxPart
+  id: _FtCGygaxHarness
+  name: gygax harness
+  description: The core of the Gygax mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      gygax_l_arm+o:
+        whitelist:
+          tags:
+          - _FtCGygaxLArm
+      gygax_r_arm+o:
+        whitelist:
+          tags:
+          - _FtCGygaxRArm
+      gygax_l_leg+o:
+        whitelist:
+          tags:
+          - _FtCGygaxLLeg
+      gygax_r_leg+o:
+        whitelist:
+          tags:
+          - _FtCGygaxRLeg
+      gygax_head+o:
+        whitelist:
+          tags:
+          - _FtCGygaxHead
+    sprite: _FtC/Objects/Specific/Mech/gygax_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: _FtCGygaxChassis
+    requiredParts:
+      _FtCGygaxLArm: false
+      _FtCGygaxRArm: false
+      _FtCGygaxLLeg: false
+      _FtCGygaxRLeg: false
+      _FtCGygaxHead: false
+  - type: Sprite
+    state: gygax_harness+o
+    noRot: true
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxLArm
+  name: gygax left arm
+  description: The left arm of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_l_arm
+  - type: Tag
+    tags:
+    - _FtCGygaxLArm
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxLLeg
+  name: gygax left leg
+  description: The left leg of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_l_leg
+  - type: Tag
+    tags:
+    - _FtCGygaxLLeg
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxRLeg
+  name: gygax right leg
+  description: The right leg of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_r_leg
+  - type: Tag
+    tags:
+    - _FtCGygaxRLeg
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxRArm
+  name: gygax right arm
+  description: The right arm of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_r_arm
+  - type: Tag
+    tags:
+    - _FtCGygaxRArm
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxArmorPlates
+  name: gygax armor plates
+  description: gygax armor plates
+  components:
+  - type: Sprite
+    state: gygax_armor
+  - type: Tag
+    tags:
+    - _FtCGygaxArmor
+
+- type: entity
+  parent: _FtCBaseGygaxPartItem
+  id: _FtCGygaxHead
+  name: gygax head
+  description: gygax head
+  components:
+  - type: Sprite
+    state: gygax_head
+  - type: Tag
+    tags:
+    - _FtCGygaxHead
+
+- type: entity
+  id: _FtCGygaxChassis
+  parent: _FtCBaseGygaxPart
+  name: gygax chassis
+  description: An in-progress construction of the gygax mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: gygax
+  - type: Sprite
+    noRot: true
+    state: gygax0
+  - type: Construction
+    graph: _FtCGygax
+    node: start
+    defaultTarget: gygax

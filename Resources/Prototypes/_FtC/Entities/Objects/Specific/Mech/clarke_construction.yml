@@ -1,0 +1,142 @@
+- type: entity
+  id: _FtCBaseClarkePart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _FtC/Objects/Specific/Mech/clarke_construction.rsi
+
+- type: entity
+  id: _FtCBaseClarkePartItem
+  parent: _FtCBaseClarkePart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: _FtCBaseClarkePart
+  id: _FtCClarkeHarness
+  name: clarke harness
+  description: The core of the Clarke mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      clarke_l_arm+o:
+        whitelist:
+          tags:
+          - _FtCClarkeLArm
+      clarke_r_arm+o:
+        whitelist:
+          tags:
+          - _FtCClarkeRArm
+      clarke_l_tread+o:
+        whitelist:
+          tags:
+          - _FtCClarkeLTread
+      clarke_r_tread+o:
+        whitelist:
+          tags:
+          - _FtCClarkeRTread
+      clarke_head+o:
+        whitelist:
+          tags:
+          - _FtCClarkeHead
+    sprite: _FtC/Objects/Specific/Mech/clarke_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: _FtCClarkeChassis
+    requiredParts:
+      _FtCClarkeLArm: false
+      _FtCClarkeRArm: false
+      _FtCClarkeLTread: false
+      _FtCClarkeRTread: false
+      _FtCClarkeHead: false
+  - type: Sprite
+    state: clarke_harness+o
+    noRot: true
+
+- type: entity
+  parent: _FtCBaseClarkePartItem
+  id: _FtCClarkeLArm
+  name: clarke left arm
+  description: The left arm of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_l_arm
+  - type: Tag
+    tags:
+    - _FtCClarkeLArm
+
+- type: entity
+  parent: _FtCBaseClarkePartItem
+  id: _FtCClarkeLTread
+  name: clarke left tread
+  description: The left tread of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_l_tread
+  - type: Tag
+    tags:
+    - _FtCClarkeLTread
+
+- type: entity
+  parent: _FtCBaseClarkePartItem
+  id: _FtCClarkeRTread
+  name: clarke right tread
+  description: The right tread of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_r_tread
+  - type: Tag
+    tags:
+    - _FtCClarkeRTread
+
+- type: entity
+  parent: _FtCBaseClarkePartItem
+  id: _FtCClarkeRArm
+  name: clarke right arm
+  description: The right arm of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_r_arm
+  - type: Tag
+    tags:
+    - _FtCClarkeRArm
+
+- type: entity
+  parent: _FtCBaseClarkePartItem
+  id: _FtCClarkeHead
+  name: clarke head
+  description: clarke head
+  components:
+  - type: Sprite
+    state: clarke_head
+  - type: Tag
+    tags:
+    - _FtCClarkeHead
+
+- type: entity
+  id: _FtCClarkeChassis
+  parent: _FtCBaseClarkePart
+  name: clarke chassis
+  description: An in-progress construction of the clarke mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: clarke
+  - type: Sprite
+    noRot: true
+    state: clarke_chassis
+  - type: Construction
+    graph: _FtCClarke
+    node: start
+    defaultTarget: clarke

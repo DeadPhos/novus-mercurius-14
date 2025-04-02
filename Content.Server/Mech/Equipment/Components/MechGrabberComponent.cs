@@ -51,4 +51,25 @@ public sealed partial class MechGrabberComponent : Component
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public DoAfterId? DoAfter;
+
+    // _FtC Content Start
+    /// <summary>
+    /// is it possible to grab a mob?
+    /// </summary>
+    [DataField]
+    public bool GrabMobs = false;
+
+    /// <summary>
+    /// is it slow mob's metabolism?
+    /// </summary>
+    [DataField]
+    public bool SlowMetabolism = false;
+
+    /// <summary>
+    /// Time that takes to escape the grabber
+    /// </summary>
+    [DataField("baseResistTime")]
+    public float BaseResistTime = 5f;
+
+    // _FtC Content End
 }

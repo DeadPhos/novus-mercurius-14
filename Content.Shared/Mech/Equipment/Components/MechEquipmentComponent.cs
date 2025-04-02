@@ -19,6 +19,11 @@ public sealed partial class MechEquipmentComponent : Component
     /// The mech that the equipment is inside of.
     /// </summary>
     [ViewVariables] public EntityUid? EquipmentOwner;
+
+    // _FtC Content start
+    [DataField("canBeUsed")]
+    public bool CanBeUsed = true;
+    // _FtC Content end
 }
 
 /// <summary>
@@ -51,3 +56,9 @@ public sealed partial class InsertEquipmentEvent : SimpleDoAfterEvent
 {
 }
 
+// _FtC Content start
+[Serializable, NetSerializable]
+public sealed partial class MechDrillDoAfterEvent : SimpleDoAfterEvent
+{
+}
+// _FtC Content end

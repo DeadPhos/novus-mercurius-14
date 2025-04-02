@@ -21,8 +21,9 @@ public sealed class MechBoundUserInterface : BoundUserInterface
     {
         base.Open();
 
-        _menu = this.CreateWindowCenteredLeft<MechMenu>();
+        _menu = this.CreateWindow<MechMenu>();
         _menu.SetEntity(Owner);
+        _menu.OpenCenteredLeft();
 
         _menu.OnRemoveButtonPressed += uid =>
         {
@@ -38,7 +39,7 @@ public sealed class MechBoundUserInterface : BoundUserInterface
             return;
         UpdateEquipmentControls(msg);
         _menu?.UpdateMechStats();
-        _menu?.UpdateEquipmentView();
+        _menu?.UpdateEquipmentView(msg);    // _FtC Mech UI Fix
     }
 
     public void UpdateEquipmentControls(MechBoundUiState state)
@@ -53,7 +54,8 @@ public sealed class MechBoundUserInterface : BoundUserInterface
                 continue;
             foreach (var (attached, estate) in state.EquipmentStates)
             {
-                if (ent == EntMan.GetEntity(attached))
+                if (ent == EntMan.GetEntity(attached) &&
+                    estate != null) // _FtC Mech UI Fix
                     ui.UpdateState(estate);
             }
         }

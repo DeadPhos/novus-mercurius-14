@@ -1,0 +1,154 @@
+- type: entity
+  id: _FtCBasePhazonPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _FtC/Objects/Specific/Mech/phazon_construction.rsi
+
+- type: entity
+  id: _FtCBasePhazonPartItem
+  parent: _FtCBasePhazonPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: _FtCBasePhazonPart
+  id: _FtCPhazonHarness
+  name: phazon harness
+  description: The core of the Phazon mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      phazon_l_arm+o:
+        whitelist:
+          tags:
+          - _FtCPhazonLArm
+      phazon_r_arm+o:
+        whitelist:
+          tags:
+          - _FtCPhazonRArm
+      phazon_l_leg+o:
+        whitelist:
+          tags:
+          - _FtCPhazonLLeg
+      phazon_r_leg+o:
+        whitelist:
+          tags:
+          - _FtCPhazonRLeg
+      phazon_head+o:
+        whitelist:
+          tags:
+          - _FtCPhazonHead
+    sprite: _FtC/Objects/Specific/Mech/phazon_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: _FtCPhazonChassis
+    requiredParts:
+      _FtCPhazonLArm: false
+      _FtCPhazonRArm: false
+      _FtCPhazonLLeg: false
+      _FtCPhazonRLeg: false
+      _FtCPhazonHead: false
+  - type: Sprite
+    state: phazon_harness+o
+    noRot: true
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonLArm
+  name: phazon left arm
+  description: The left arm of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_l_arm
+  - type: Tag
+    tags:
+    - _FtCPhazonLArm
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonLLeg
+  name: phazon left leg
+  description: The left leg of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_l_leg
+  - type: Tag
+    tags:
+    - _FtCPhazonLLeg
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonRLeg
+  name: phazon right leg
+  description: The right leg of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_r_leg
+  - type: Tag
+    tags:
+    - _FtCPhazonRLeg
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonRArm
+  name: phazon right arm
+  description: The right arm of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_r_arm
+  - type: Tag
+    tags:
+    - _FtCPhazonRArm
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonArmorPlates
+  name: phazon armor plates
+  description: phazon armor plates
+  components:
+  - type: Sprite
+    state: phazon_armor
+  - type: Tag
+    tags:
+    - _FtCPhazonArmor
+
+- type: entity
+  parent: _FtCBasePhazonPartItem
+  id: _FtCPhazonHead
+  name: phazon head
+  description: phazon head
+  components:
+  - type: Sprite
+    state: phazon_head
+  - type: Tag
+    tags:
+    - _FtCPhazonHead
+
+- type: entity
+  id: _FtCPhazonChassis
+  parent: _FtCBasePhazonPart
+  name: phazon chassis
+  description: An in-progress construction of the phazon mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: phazon
+  - type: Sprite
+    noRot: true
+    state: phazon0
+  - type: Construction
+    graph: _FtCPhazon
+    node: start
+    defaultTarget: phazon

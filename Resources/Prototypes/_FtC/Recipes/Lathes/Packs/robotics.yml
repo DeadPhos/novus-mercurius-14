@@ -1,0 +1,92 @@
+- type: latheRecipePack
+  id: _FtCGygaxPack
+  recipes:
+  - _FtCGygaxHarness
+  - _FtCGygaxLArm
+  - _FtCGygaxRArm
+  - _FtCGygaxLLeg
+  - _FtCGygaxRLeg
+  - _FtCGygaxArmorPlates
+  - _FtCGygaxHead
+  - _FtCGygaxCentralElectronics
+  - _FtCGygaxPeripheralsElectronics
+
+- type: latheRecipePack
+  id: _FtCOdysseusPack
+  recipes:
+  - _FtCOdysseusHarness
+  - _FtCOdysseusLArm
+  - _FtCOdysseusRArm
+  - _FtCOdysseusLLeg
+  - _FtCOdysseusRLeg
+  - _FtCOdysseusHead
+  - _FtCMechGunMedigun
+  - _FtCOdysseusCentralElectronics
+  - _FtCOdysseusPeripheralsElectronics
+
+- type: latheRecipePack
+  id: _FtCClarkePack
+  recipes:
+  - _FtCClarkeHarness
+  - _FtCClarkeLArm
+  - _FtCClarkeRArm
+  - _FtCClarkeLTread
+  - _FtCClarkeRTread
+  - _FtCClarkeHead
+  - _FtCClarkeCentralElectronics
+  - _FtCClarkePeripheralsElectronics
+
+- type: latheRecipePack
+  id: _FtCDurandPack
+  recipes:
+  - _FtCDurandHarness
+  - _FtCDurandLArm
+  - _FtCDurandRArm
+  - _FtCDurandLLeg
+  - _FtCDurandRLeg
+  - _FtCDurandHead
+  - _FtCDurandArmorPlates
+  - _FtCDurandCentralElectronics
+  - _FtCDurandPeripheralsElectronics
+
+- type: latheRecipePack
+  id: _FtCPhazonPack
+  recipes:
+  - _FtCPhazonHarness
+  - _FtCPhazonLArm
+  - _FtCPhazonRArm
+  - _FtCPhazonLLeg
+  - _FtCPhazonRLeg
+  - _FtCPhazonHead
+  - _FtCPhazonArmorPlates
+  - _FtCPhazonCentralElectronics
+  - _FtCPhazonPeripheralsElectronics
+  - _FtCPhazonWeaponControlElectronics
+
+- type: latheRecipePack
+  id: _FtCMechEquipmentPack
+  recipes:
+  - MechEquipmentDiamondDrill
+  - MechEquipmentDrill
+  - MechEquipmentArmorMelee
+  - MechEquipmentArmorRange
+  - _FtCMechWeaponCutter
+  - MechEquipmentHumanSleeper
+  - MechEquipmentHumanGrabber
+  - _FtCMechGunImmolatorLaser
+  - _FtCMechGunPeacemakerDisabler
+  - _FtCMechGunSolarisLaserCannon
+  - _FtCMechGunTeslaCannon
+  - _FtCMechGunScattershot
+  - _FtCMechGunUltraAC2
+  - _FtCMechGunFNX99Hades
+  - _FtCMechGunMHAR21
+  - _FtCMechGunSGL6
+  - _FtCMechGunBRM6
+#  - _FtCMechGunSRM8 Вырезано ради баланса
+  - _FtCBoxAmmoAC2Ultra
+  - _FtCBoxAmmoScattershot
+  - _FtCBoxAmmoHades
+  - _FtCBoxAmmoSniper
+  - _FtCBoxAmmoGranade
+  - _FtCBoxPlasmaBox

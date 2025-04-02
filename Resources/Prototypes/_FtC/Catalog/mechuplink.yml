@@ -1,0 +1,138 @@
+#mech
+- type: listing
+  id: UplinkMechGygax
+  name: uplink-syndimech-mech-gygax-name
+  description: uplink-syndimech-mech-gygax-desc
+  productEntity: _FtCMechDarkGygaxBattery
+  cost:
+    Telecrystal: 35
+  categories:
+  - _FtCUplinkMechMechs
+
+- type: listing
+  id: UplinkMechMauler
+  name: uplink-syndimech-mech-mauler-name
+  description: uplink-syndimech-mech-mauler-desc
+  productEntity: _FtCMechMaulerBattery
+  cost:
+    Telecrystal: 45
+  categories:
+  - _FtCUplinkMechMechs
+
+#weapons
+
+- type: listing
+  id: UplinkMechTeslaCannon
+  name: uplink-syndimech-weapon-tesla-name
+  description: uplink-syndimech-weapon-tesla-desc
+  productEntity: _FtCMechGunTeslaCannon
+  cost:
+    Telecrystal: 7
+  categories:
+  - _FtCUplinkMechWeapon
+
+- type: listing
+  id: UplinkMechScattershot
+  name: uplink-syndimech-weapon-scatter-name
+  description: uplink-syndimech-weapon-scatter-desc
+  productEntity: _FtCMechGunScattershot
+  cost:
+    Telecrystal: 9
+  categories:
+  - _FtCUplinkMechWeapon
+
+- type: listing
+  id: UplinkMechUltraAC2
+  name: uplink-syndimech-weapon-ultra-name
+  description: uplink-syndimech-weapon-ultra-desc
+  productEntity: _FtCMechGunUltraAC2
+  cost:
+    Telecrystal: 9
+  categories:
+  - _FtCUplinkMechWeapon
+
+- type: listing
+  id: UplinkMechGunMHAR21
+  name: uplink-syndimech-weapon-madeuce-name
+  description: uplink-syndimech-weapon-madeuce-desc
+  productEntity: _FtCMechGunMHAR21
+  cost:
+    Telecrystal: 11
+  categories:
+  - _FtCUplinkMechWeapon
+
+
+- type: listing
+  id: UplinkMechGunSRM8
+  name: uplink-syndimech-weapon-srm-name
+  description: uplink-syndimech-weapon-srm-desc
+  productEntity: _FtCMechGunSRM8
+  cost:
+    Telecrystal: 12
+  categories:
+  - _FtCUplinkMechWeapon
+
+#equipment
+
+- type: listing
+  id: UplinkMechArmorMelee
+  name: uplink-syndimech-equipment-armor-melee-name
+  description: uplink-syndimech-equipment-armor-melee-desc
+  productEntity: MechEquipmentArmorMelee
+  cost:
+    Telecrystal: 5
+  categories:
+  - _FtCUplinkMechEquipment
+
+- type: listing
+  id: UplinkMechArmorRange
+  name: uplink-syndimech-equipment-armor-range-name
+  description: uplink-syndimech-equipment-armor-range-desc
+  productEntity: MechEquipmentArmorRange
+  cost:
+    Telecrystal: 10
+  categories:
+  - _FtCUplinkMechEquipment
+
+#ammo
+- type: listing
+  id: UplinkMechAmmoScatter
+  name: uplink-syndimech-ammo-scatter-name
+  description: uplink-syndimech-ammo-scatter-desc
+  productEntity: _FtCBoxAmmoScattershot
+  cost:
+    Telecrystal: 2
+  categories:
+  - _FtCUplinkMechAmmo
+
+- type: listing
+  id: UplinkMechAmmoUltra
+  name: uplink-syndimech-ammo-ultra-name
+  description: uplink-syndimech-ammo-ultra-desc
+  productEntity: _FtCBoxAmmoAC2Ultra
+  cost:
+    Telecrystal: 2
+  categories:
+  - _FtCUplinkMechAmmo
+
+- type: listing
+  id: UplinkMechAmmoMadeuce
+  name: uplink-syndimech-ammo-madeuce-name
+  description: uplink-syndimech-ammo-madeuce-desc
+  productEntity: _FtCBoxAmmoSniper
+  cost:
+    Telecrystal: 4
+  categories:
+  - _FtCUplinkMechAmmo
+
+- type: listing
+  id: UplinkMechAmmoSRM
+  name: uplink-syndimech-ammo-srm-name
+  description: uplink-syndimech-ammo-srm-desc
+  productEntity: _FtCBoxAmmoGranade
+  cost:
+    Telecrystal: 5
+  categories:
+  - _FtCUplinkMechAmmo
+
+

@@ -54,4 +54,10 @@ public sealed partial class HitscanPrototype : IPrototype, IShootable
     /// </summary>
     [DataField("maxLength")]
     public float MaxLength = 20f;
+
+    [DataField]
+    public List<object> TargetEvents = new();   // _FtC Hitscan events
+
+    [DataField]
+    public float? BloodlossModifier = null;   // _FtC Hitscan bloodloss modify
 }
