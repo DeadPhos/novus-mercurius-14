@@ -4,3 +4,10 @@
   id: SeeingStatic
   kind: source
   path: "/Textures/_FtC/Shaders/seeing_static.swsl"
+
+# Rozpraszanie światła
+
+- type: shader
+  id: Bloom
+  kind: source
+  path: "/Textures/_FtC/Shaders/bloom.swsl"
