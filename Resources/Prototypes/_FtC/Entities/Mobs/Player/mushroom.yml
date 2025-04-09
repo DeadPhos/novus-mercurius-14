@@ -1,0 +1,23 @@
+- type: entity
+  save: false
+  name: Urist McMush
+  parent: BaseMobMushroom
+  id: MobMushroom
+  components:
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 0.5
+      damageRecovery:
+        types:
+          Asphyxiation: -1.0
+
+# Reformed Mushroom
+- type: entity
+  parent: MobMushroom
+  categories: [ HideSpawnMenu ]
+  id: MobMushroomReformed
+  name: Reformed Mushroom
+  components:
+    - type: IsDeadIC
+    - type: RandomHumanoidAppearance

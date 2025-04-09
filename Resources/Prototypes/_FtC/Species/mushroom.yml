@@ -1,0 +1,131 @@
+- type: species
+  id: Mushroom
+  name: species-name-mushroom
+  roundStart: true
+  prototype: MobMushroom
+  sprites: MobMushroomSprites
+  defaultSkinTone: "#c4b794"
+  markingLimits: MobMushroomMarkingLimits
+  dollPrototype: MobMushroomDummy
+  skinColoration: Hues
+  maleFirstNames: NamesMushroomFirst
+  femaleFirstNames: NamesMushroomFirst
+  lastNames: NamesMushroomLast
+  naming: TheFirstofLast
+
+- type: speciesBaseSprites
+  id: MobMushroomSprites
+  sprites:
+    Head: MobMushroomHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
+    Chest: MobMushroomTorso
+    Eyes: MobMushroomEyes
+    LArm: MobMushroomLArm
+    RArm: MobMushroomRArm
+    LHand: MobMushroomLHand
+    RHand: MobMushroomRHand
+    LLeg: MobMushroomLLeg
+    RLeg: MobMushroomRLeg
+    LFoot: MobMushroomLFoot
+    RFoot: MobMushroomRFoot
+
+- type: markingPoints
+  id: MobMushroomMarkingLimits
+  onlyWhitelisted: true
+  points:
+    HeadTop:
+      points: 1
+      required: true
+
+- type: humanoidBaseSprite
+  id: MobMushroomEyes
+  baseSprite:
+    sprite: Mobs/Customization/eyes.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobMushroomHead
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobMushroomHeadMale
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobMushroomHeadFemale
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobMushroomTorso
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobMushroomTorsoMale
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobMushroomTorsoFemale
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobMushroomLLeg
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobMushroomLHand
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobMushroomLArm
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobMushroomLFoot
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobMushroomRLeg
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobMushroomRHand
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobMushroomRArm
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobMushroomRFoot
+  baseSprite:
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+    state: r_foot

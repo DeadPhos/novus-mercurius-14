@@ -1,0 +1,88 @@
+- type: entity
+  id: PartMushroom
+  parent: [BaseItem, BasePart]
+  name: "mush body part"
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+
+- type: entity
+  id: TorsoMushroom
+  name: "mush torso"
+  parent: [PartMushroom, BaseTorso]
+  components:
+  - type: Sprite
+    state: "torso_m"
+
+- type: entity
+  id: HeadMushroom
+  name: "mush head"
+  parent: [ PartMushroom, BaseHead ]
+  components:
+  - type: Sprite
+    state: "head_m"
+
+- type: entity
+  id: LeftArmMushroom
+  name: "left mush arm"
+  parent: [ PartMushroom, BaseLeftArm ]
+  components:
+  - type: Sprite
+    state: "l_arm"
+
+- type: entity
+  id: RightArmMushroom
+  name: "right mush arm"
+  parent: [ PartMushroom, BaseRightArm ]
+  components:
+  - type: Sprite
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandMushroom
+  name: "left mush hand"
+  parent: [ PartMushroom, BaseLeftHand ]
+  components:
+  - type: Sprite
+    state: "l_hand"
+
+- type: entity
+  id: RightHandMushroom
+  name: "right mush hand"
+  parent: [ PartMushroom, BaseRightHand ]
+  components:
+  - type: Sprite
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegMushroom
+  name: "left mush leg"
+  parent: [ PartMushroom, BaseLeftLeg ]
+  components:
+  - type: Sprite
+    state: "l_leg"
+
+- type: entity
+  id: RightLegMushroom
+  name: "right mush leg"
+  parent: [ PartMushroom, BaseRightLeg ]
+  components:
+  - type: Sprite
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootMushroom
+  name: "left mush foot"
+  parent: [ PartMushroom, BaseLeftFoot ]
+  components:
+  - type: Sprite
+    state: "l_foot"
+
+- type: entity
+  id: RightFootMushroom
+  name: "right mush foot"
+  parent: [ PartMushroom, BaseRightFoot ]
+  components:
+  - type: Sprite
+    state: "r_foot"

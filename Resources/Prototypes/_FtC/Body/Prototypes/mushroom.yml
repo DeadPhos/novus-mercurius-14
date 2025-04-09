@@ -1,0 +1,49 @@
+- type: body
+  id: _FtCMushroomBody
+  name: mushroom
+  root: torso
+  slots:
+    head:
+      part: HeadMushroom
+      connections:
+        - torso
+      organs:
+        brain: OrganMushroomBrainMiniMush
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoMushroom
+      organs:
+        heart: OrganMushroomHeart
+        lungs: OrganMushroomLungs
+        stomach: OrganMushroomStomach
+        kidneys: OrganHumanKidneys
+      connections:
+        - left arm
+        - right arm
+        - left leg
+        - right leg
+    right arm:
+      part: RightArmMushroom
+      connections:
+        - right hand
+    left arm:
+      part: LeftArmMushroom
+      connections:
+        - left hand
+    right hand:
+      part: RightHandMushroom
+    left hand:
+      part: LeftHandMushroom
+    right leg:
+      part: RightLegMushroom
+      connections:
+        - right foot
+    left leg:
+      part: LeftLegMushroom
+      connections:
+        - left foot
+    right foot:
+      part: RightFootMushroom
+    left foot:
+      part: LeftFootMushroom
+

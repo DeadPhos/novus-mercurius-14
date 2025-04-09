@@ -1,0 +1,8 @@
+- type: marking
+  id: MushroomCap
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mushroom]
+  sprites:
+  - sprite: _FtC/Mobs/Customization/Mushroom/caps.rsi
+    state: mushroom_cap
