@@ -1,7 +1,0 @@
-- type: material
-  id: RawPhoron
-  stackEntity: PhoronOre1
-  name: форон
-  unit: materials-unit-piece
-  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: phoron_gem_spent }
-  price: 5.5

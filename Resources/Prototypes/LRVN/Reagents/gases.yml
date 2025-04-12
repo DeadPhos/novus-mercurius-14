@@ -3,7 +3,7 @@
   name: форон
   desc: literally plasma 2.0
   flavor: bitter
-  color: "#990033"
+  color: 990033
   recognizable: true
   boilingPoint: -50.0
   meltingPoint: -200.0

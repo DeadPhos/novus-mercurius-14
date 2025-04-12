@@ -25,7 +25,7 @@
     solutions:
       phoronore:
         reagents:
-        - ReagentId: LiguidPhoron
+        - ReagentId: LiquidPhoron
           Quantity: 5
   - type: Item
     heldPrefix: phoron
