@@ -1,0 +1,39 @@
+- type: entity
+  parent: OreBase
+  id: PhoronOre
+  name: кристалл форона
+  description: Этот, похоже, не заряжен.
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: PhoronOre
+  - type: Sprite
+    sprite: /Textures/Objects/Materials/materials.rsi
+    state: phoron_gem_spent
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPhoron: 100
+  - type: PointLight
+    radius: 1.2
+    energy: 0.2
+    castShadows: false
+    color: "#990033"
+  - type: Extractable
+    grindableSolutionName: phoronore
+  - type: SolutionContainerManager
+    solutions:
+      phoronore:
+        reagents:
+        - ReagentId: LiguidPhoron
+          Quantity: 5
+  - type: Item
+    heldPrefix: phoron
+
+- type: entity
+  parent: PhoronOre
+  id: PhoronOre1
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

@@ -1,0 +1,43 @@
+- type: reagent
+  id: LiquidPhoron
+  name: форон
+  desc: literally plasma 2.0
+  flavor: bitter
+  color: "#990033"
+  recognizable: true
+  boilingPoint: -50.0
+  meltingPoint: -200.0
+  tileReactions:
+  - !type:FlammableTileReaction
+    temperatureMultiplier: 2.0
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 5 # Увеличенный урон от яда
+      - !type:AdjustReagent
+        reagent: Inaprovaline
+        amount: -3.0
+    Gas:
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              2
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:ReagentThreshold
+            min: 2.0
+        clear: True
+        time: 3
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ] 
+      effects:
+      - !type:FlammableReaction
