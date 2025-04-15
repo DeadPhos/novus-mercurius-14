@@ -1,9 +1,10 @@
 - type: reagent
   id: LiquidPhoron
   name: форон
-  desc: literally plasma 2.0
+  desc: Крайне дорогая жидкость, нахождение которой гарантирует даже самому бедному шахтёру безбедную жизнь.
+  physicalDesc: reagent-physical-desc-cloudy
   flavor: bitter
-  color: 990033
+  color: "#990033"
   recognizable: true
   boilingPoint: -50.0
   meltingPoint: -200.0
