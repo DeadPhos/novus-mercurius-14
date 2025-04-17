@@ -13,7 +13,7 @@
     torso:
       part: TorsoMushroom
       organs:
-        heart: OrganMushroomHeart
+        heart: OrganHumanHeart
         lungs: OrganMushroomLungs
         stomach: OrganMushroomStomach
         kidneys: OrganHumanKidneys
