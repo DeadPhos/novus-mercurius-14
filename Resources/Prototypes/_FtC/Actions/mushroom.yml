@@ -1,0 +1,24 @@
+- type: entity
+  id: MushroomGibAction
+  name: Gib Yourself!
+  description: Split apart into 3 mush.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Mobs/Species/Diona/organs.rsi #
+      state: brain
+    event: !type:GibActionEvent {}
+    checkCanInteract: false
+    checkConsciousness: false
+
+- type: entity
+  id: MushroomReformAction
+  name: Reform
+  description: Reform back into a whole Mushroom.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: _FtC/Mobs/Species/Mushroom/parts.rsi
+      state: full
+    event: !type:ReformEvent {}
+    useDelay: 600 # Once every 10 minutes. Keep them dead for a fair bit before reforming
