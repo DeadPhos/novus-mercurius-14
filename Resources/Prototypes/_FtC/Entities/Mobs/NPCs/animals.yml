@@ -1,7 +1,7 @@
 - type: entity
   name: small mush
   parent: [SimpleMobBase, StripableInventoryBase]
-  id: MobSmallMushroom
+  id: MobMushroomMiniMush
   description: It's like a cat, only.... mush-ier.
   components:
   - type: Sprite
@@ -74,14 +74,14 @@
   - type: BodyEmotes
     soundsId: Nymph
   - type: Reform
-    actionPrototype: DionaReformAction
+    actionPrototype: MushroomReformAction
     reformTime: 10
     popupText: diona-reform-attempt
     reformPrototype: MobMushroomReformed
 
 - type: entity
-  parent: MobDionaNymph
-  id: MobDionaNymphAccent # No talky. For non-brain & wild nymphs
+  parent: MobMushroomMiniMush
+  id: MobMushroomMiniMushAccent # No talky. For non-brain & wild nymphs
   suffix: Accent
   components:
   - type: ReplacementAccent

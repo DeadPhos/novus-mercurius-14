@@ -164,7 +164,7 @@
 # Nymphs that the organs will turn into
 - type: entity
   id: OrganMushroomMiniMushBrain
-  parent: MobDionaNymph #
+  parent: MobMushroomMiniMush #
   categories: [ HideSpawnMenu ]
   name: diona nymph
   suffix: Brain
@@ -176,7 +176,7 @@
 
 - type: entity
   id: OrganMushroomMiniMushStomach
-  parent: MobDionaNymphAccent #
+  parent: MobMushroomMiniMushAccent #
   categories: [ HideSpawnMenu ]
   name: diona nymph
   suffix: Stomach
@@ -188,7 +188,7 @@
 
 - type: entity
   id: OrganMushroomMiniMushLungs
-  parent: MobDionaNymphAccent #
+  parent: MobMushroomMiniMushAccent #
   categories: [ HideSpawnMenu ]
   name: diona nymph #
   suffix: Lungs
