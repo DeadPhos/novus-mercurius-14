@@ -1,0 +1,15 @@
+# High yields
+
+# Medium yields
+- type: ore
+  id: OrePhoron
+  oreEntity: PhoronOre1
+  minOreYield: 1
+  maxOreYield: 3
+
+# Low yields
+- type: ore
+  id: OrePhoronCrystal
+  oreEntity: CrystalPhoron
+  minOreYield: 1
+  maxOreYield: 1

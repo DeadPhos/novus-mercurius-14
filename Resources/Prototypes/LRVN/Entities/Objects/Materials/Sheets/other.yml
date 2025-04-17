@@ -1,0 +1,48 @@
+- type: entity
+  parent: SheetOtherBase
+  id: SheetPhoron
+  name: форон
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Phoron: 100
+  - type: Stack
+    stackType: Phoron
+  - type: Sprite
+    state: phoron
+    layers:
+    - state: phoron
+      map: ["base"]
+  - type: Item
+    heldPrefix: phoron
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: phoron
+  - type: SolutionContainerManager
+    solutions:
+      plasma:
+        reagents:
+        - ReagentId: LiquidPhoron
+          Quantity: 25
+        canReact: true
+  - type: Tag
+    tags:
+    - Sheet
+
+- type: entity
+  parent: SheetPhoron
+  id: SheetPhoron10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SheetPhoron
+  id: SheetPhoron1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1

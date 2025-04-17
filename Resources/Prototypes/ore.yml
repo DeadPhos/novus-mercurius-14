@@ -106,6 +106,7 @@
     OreUranium: 1
     OreBananium: 0.5
     OreArtifactFragment: 0.5
+    OrePhoron: 0.5 # LRVN
 
 - type: weightedRandomOre
   id: OreCrab
