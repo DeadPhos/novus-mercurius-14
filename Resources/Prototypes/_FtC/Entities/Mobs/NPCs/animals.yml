@@ -9,7 +9,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: nymph
-      sprite: Mobs/Animals/nymph.rsi
+      sprite: Mobs/Animals/nymph.rsi #
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -78,3 +78,11 @@
     reformTime: 10
     popupText: diona-reform-attempt
     reformPrototype: MobMushroomReformed
+
+- type: entity
+  parent: MobDionaNymph
+  id: MobDionaNymphAccent # No talky. For non-brain & wild nymphs
+  suffix: Accent
+  components:
+  - type: ReplacementAccent
+    accent: nymph
