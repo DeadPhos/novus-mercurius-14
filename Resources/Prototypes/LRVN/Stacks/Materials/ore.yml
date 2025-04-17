@@ -1,0 +1,6 @@
+- type: stack
+  id: PhoronOre
+  name: phoron ore
+  icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: phoron_gem_spent }
+  spawn: PhoronOre1
+  maxCount: 15

@@ -1,0 +1,32 @@
+- type: entity
+  parent: [ ShardCrystalBase, GrenadeBase ]
+  name: кристалл форона
+  description: Невероятно мощный кристалл, мощность от которого расплывается по всему вашему телу. Кажется, его не стоит сжимать в руках.
+  id: CrystalPhoron
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Objects/Materials/materials.rsi
+        state: phoron_gem
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#990033"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Minibomb
+    totalIntensity: 200
+    intensitySlope: 30
+    maxIntensity: 60
+    canCreateVacuum: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: OnUseTimerTrigger
+    delay: 0.025

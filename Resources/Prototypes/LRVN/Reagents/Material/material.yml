@@ -1,0 +1,7 @@
+- type: material
+  id: RawPhoron
+  stackEntity: SheetPhoron1
+  name: форон
+  icon: { sprite: Objects/Materials/Sheets/other.rsi, state: phoron }
+  color: "#990033"
+  price: 7.5 # phoron will make us rich
