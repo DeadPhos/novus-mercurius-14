@@ -8,8 +8,8 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: nymph
-      sprite: Mobs/Animals/nymph.rsi #
+      state: walkingmushroom
+      sprite: _FtC/Mobs/Animals/minimush.rsi #
   - type: Physics
   - type: Fixtures
     fixtures:
