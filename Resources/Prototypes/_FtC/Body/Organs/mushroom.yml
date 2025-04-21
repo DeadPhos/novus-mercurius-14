@@ -4,7 +4,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Diona/organs.rsi #
+    sprite: _FtC/Mobs/Species/Mushroom/organs.rsi #
   - type: Organ
   - type: Food
   - type: Extractable
