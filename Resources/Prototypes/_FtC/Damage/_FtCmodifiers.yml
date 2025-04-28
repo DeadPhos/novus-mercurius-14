@@ -16,3 +16,11 @@
     Blunt: 10
     Slash: 10
     Piercing: 10
+
+- type: damageModifierSet
+  id: Mushroom
+  coefficients:
+    Blunt: 0.5 #
+    Slash: 0.5 #
+    Heat: 0.5 #
+    Shock: 0.5 #
