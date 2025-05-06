@@ -315,12 +315,12 @@
     - BorgModules
     - MechParts
     - MechEquipment
-    - ADTGygaxPack
-    - ADTOdysseusPack
-    - ADTClarkePack
-    - ADTDurandPack
-    - ADTPhazonPack
-    - ADTMechEquipmentPack
+    - _FtCGygaxPack
+    - _FtCOdysseusPack
+    - _FtCClarkePack
+    - _FtCDurandPack
+    - _FtCPhazonPack
+    - _FtCMechEquipmentPack
   - type: MaterialStorage
     whitelist:
       tags:
