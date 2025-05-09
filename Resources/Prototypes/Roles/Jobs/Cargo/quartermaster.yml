@@ -6,15 +6,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobCargoTechnician
-      time: 21600 #6 hrs
+      time: 18000 #5 hrs
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 10800 #3 hrs
+      time: 9000 #2.5 hrs
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 36000 #10 hours
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
   weight: 10
   displayWeight: 40 #FtC-Edit
   startingGear: QuartermasterGear
@@ -31,8 +29,8 @@
   - Brig
   - Cryogenics
   special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+#  - !type:AddImplantSpecial
+#    implants: [ MindShieldImplant ] Usunięcie implantów FtC
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
