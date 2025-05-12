@@ -190,6 +190,40 @@
   - КОСМОС
   - СОЛНЕЧНЫЙ СВЕТ
   - ВОДУ
+  - ACID
+  - AIR
+  - BLOOD
+  - BOOKS
+  - CARBON DIOXIDE
+  - CLOTHES
+  - CLOWNS
+  - COLD
+  - COTTON
+  - CYBORG CONTACT
+  - DARKNESS
+  - DRINKS
+  - ELECTRICITY
+  - EVERYTHING
+  - FLOORS
+  - FOOD
+  - GLASS
+  - HAPPINESS
+  - HUMANOID CONTACT
+  - HUMOR
+  - LIGHT
+  - MEAT
+  - MEDICINE
+  - METAL
+  - NUTS
+  - OXYGEN
+  - PAIN
+  - PLANTS
+  - PLASMA
+  - ROBOTS
+  - SPACE
+  - SUNLIGHT
+  - WATER
+
 
 # Severity is how bad the allergy is.
 - type: dataset
@@ -381,6 +415,7 @@
   - УЧЁНЫЕ
   - ОФИЦЕРЫ БЕЗОПАСНОСТИ
   - ИНЖЕНЕРЫ
+  - ГОСУДАРСТВЕННИКИ
   # - VIROLOGISTS
   - СМОТРИТЕЛИ
 
@@ -393,7 +428,7 @@
   - КРОВАВАЯ МЭРИ
   - РАДОСТЬ ДОКТОРА
   - ПАНГАЛАКТИЧЕСКИЙ ГРЫЗЛОДЁР
-  # - LEAN был выпилен, в рунете не меметичен
+  - ЛИН
   - ЛОНГ-АЙЛЕНД AЙС ТИ
   - ЯДЕРНАЯ КОЛА
   - МАСЛО
