@@ -8,7 +8,7 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: walkingmushroom
+      state: minimush
       sprite: _FtC/Mobs/Animals/minimush.rsi #
   - type: Physics
   - type: Fixtures
@@ -31,11 +31,11 @@
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: nymph
+        Base: minimush #
       Critical:
-        Base: nymph_sleep
+        Base: minimush_dead #
       Dead:
-        Base: nymph_dead
+        Base: minimush_dead #
   - type: Butcherable
     spawned:
     - id: MaterialWoodPlank1
