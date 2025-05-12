@@ -16,12 +16,28 @@
     state: "torso_m"
 
 - type: entity
+  id: TorsoMushroomF
+  name: "mush torso"
+  parent: [PartMushroom, BaseTorso]
+  components:
+  - type: Sprite
+    state: "torso_f"
+
+- type: entity
   id: HeadMushroom
   name: "mush head"
   parent: [ PartMushroom, BaseHead ]
   components:
   - type: Sprite
     state: "head_m"
+
+- type: entity
+  id: HeadMushroomF
+  name: "mush head"
+  parent: [ PartMushroom, BaseHead ]
+  components:
+  - type: Sprite
+    state: "head_f"
 
 - type: entity
   id: LeftArmMushroom
