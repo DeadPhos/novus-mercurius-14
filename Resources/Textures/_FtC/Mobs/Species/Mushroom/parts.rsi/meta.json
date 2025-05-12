@@ -54,6 +54,10 @@
     {
       "name": "torso_f",
       "directions": 4
+    },
+    {
+      "name": "full",
+      "directions": 4
     }
   ]
 }
