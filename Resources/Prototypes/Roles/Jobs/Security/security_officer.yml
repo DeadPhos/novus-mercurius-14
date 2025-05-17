@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 9000 #2.5 hrs
+      time: 36000 #10 hrs
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos
@@ -18,9 +18,9 @@
   - Service
   - External
   - Cryogenics
-#  special:
-#  - !type:AddImplantSpecial
-#    implants: [ MindShieldImplant ] Usunięcie implantów FtC
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: SecurityOfficerGear

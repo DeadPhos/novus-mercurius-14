@@ -58,7 +58,7 @@
       - id: HydroponicsToolHatchet
       - id: ClothingOuterApronBotanist
       - id: ClothingHandsGlovesLeather
-      - id: ChemistryBottleEZNutrient
+      - id: EZNutrientChemistryBottle
         amount: 2
 
 - type: entity
@@ -92,13 +92,3 @@
       - id: WatermelonSeeds
       - id: PeaSeeds
       - id: CherrySeeds
-
-- type: entity
-  id: CrateHydroponicsTray
-  parent: CrateHydroponics
-  name: hydroponics tray crate
-  description: Contains a hydroponics tray flatpack.
-  components:
-  - type: StorageFill
-    contents:
-    - id: HydroponicsTrayFlatpack

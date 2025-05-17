@@ -68,7 +68,6 @@
     softness: 5
     autoRot: true
   - type: Ringer
-  - type: RingerUplink
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: PDA
@@ -122,25 +121,6 @@
     proto: robot
   - type: Speech
     speechVerb: Robotic
-
-- type: entity
-  parent: BasePDA
-  id: BaseWidePDA
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/pda.rsi
-    layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
-      state: "pda"
-    - state: "light_overlay_wide"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
-      shader: "unshaded"
-      visible: false
-    - state: "id_overlay_wide"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
-      shader: "unshaded"
-      visible: false
 
 - type: entity
   parent: BasePDA
@@ -544,7 +524,7 @@
     state: pda-bartender
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: LibrarianPDA
   name: librarian PDA
   description: Smells like books.
@@ -963,7 +943,6 @@
   - type: Pda
     id: UniversalIDCard
   - type: HealthAnalyzer
-    maxScanRange: null
     scanDelay: 0
     silent: true
   - type: CartridgeLoader
@@ -1075,7 +1054,7 @@
     - DoorBumpOpener
 
 - type: entity
-  parent: [ BasePDA, BaseSyndicateContraband ]
+  parent: BasePDA
   id: SyndiPDA
   name: syndicate PDA
   description: Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
@@ -1438,7 +1417,7 @@
     state: pda-seniorofficer
 
 - type: entity
-  parent: [ BaseMajorContraband, SyndiPDA ]
+  parent: SyndiPDA
   id: PiratePDA
   name: pirate PDA
   description: Yargh!
@@ -1454,9 +1433,9 @@
     state: pda-pirate
 
 - type: entity
-  parent: [ BaseMedicalPDA, BaseSyndicateContraband ]
+  parent: BaseMedicalPDA
   id: SyndiAgentPDA
-  name: syndicate corpsman PDA
+  name: syndicate agent PDA
   description: For those days when healing normal syndicates aren't enough, try healing nuclear operatives instead!
   components:
   - type: Pda
@@ -1509,7 +1488,7 @@
         type: ChameleonBoundUserInterface
 
 - type: entity
-  parent: BaseWidePDA
+  parent: BasePDA
   id: WizardPDA
   name: wizard PDA
   description: You hear faint whispers coming from it.

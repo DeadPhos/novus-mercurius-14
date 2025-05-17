@@ -197,7 +197,7 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         if (!PrivilegedIdIsAuthorized(uid, component))
             return;
 
-        if (!_interactionSystem.InRangeUnobstructed(player, component.TargetAccessReaderId))
+        if (!_interactionSystem.InRangeUnobstructed(uid, component.TargetAccessReaderId))
         {
             _popupSystem.PopupEntity(Loc.GetString("access-overrider-out-of-range"), player, player);
 
@@ -241,7 +241,7 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         var addedTags = newAccessList.Except(oldTags).Select(tag => "+" + tag).ToList();
         var removedTags = oldTags.Except(newAccessList).Select(tag => "-" + tag).ToList();
 
-        _adminLogger.Add(LogType.Action, LogImpact.High,
+        _adminLogger.Add(LogType.Action, LogImpact.Medium,
             $"{ToPrettyString(player):player} has modified {ToPrettyString(accessReaderEnt.Value):entity} with the following allowed access level holders: [{string.Join(", ", addedTags.Union(removedTags))}] [{string.Join(", ", newAccessList)}]");
 
         accessReaderEnt.Value.Comp.AccessLists = ConvertAccessListToHashSet(newAccessList);

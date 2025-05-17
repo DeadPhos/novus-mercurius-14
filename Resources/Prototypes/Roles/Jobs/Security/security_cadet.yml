@@ -8,7 +8,7 @@
       time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 18000 #5 hrs
+      time: 54000 #15 hrs
       inverted: true # stop playing intern if you're good at security!
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
@@ -21,9 +21,9 @@
   - Service
   - External
   - Cryogenics
-#  special:
-#  - !type:AddImplantSpecial
-#    implants: [ MindShieldImplant ] Usunięcie implantów FtC
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: SecurityCadetGear

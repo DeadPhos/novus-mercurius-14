@@ -2,6 +2,8 @@ using System.Linq;
 using Content.Server.Administration;
 using Content.Server.GameTicking;
 using Content.Shared.Administration;
+using Content.Shared.CCVar;
+using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.ContentPack;
 using Robust.Shared.EntitySerialization;
@@ -16,6 +18,8 @@ namespace Content.Server.Mapping
     sealed class MappingCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entities = default!;
+        [Dependency] private readonly IMapManager _map = default!;
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         public string Command => "mapping";
         public string Description => Loc.GetString("cmd-mapping-desc");

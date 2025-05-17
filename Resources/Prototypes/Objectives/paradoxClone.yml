@@ -9,10 +9,8 @@
     issuer: objective-issuer-paradox
   - type: RoleRequirement
     roles:
-    - ParadoxCloneRole
-  - type: Tag
-    tags:
-    - ParadoxCloneObjectiveBlacklist # don't copy the objectives from other clones
+      mindRoles:
+      - ParadoxCloneRole
 
 - type: entity
   parent: [BaseParadoxCloneObjective, BaseLivingObjective]
@@ -34,7 +32,7 @@
   components:
   - type: PickSpecificPerson
   - type: KillPersonCondition
-    requireDead: true
+    requireDead: true # don't count missing evac as killing
   - type: TargetObjective
     title: objective-condition-kill-head-title # kill <name>, <job>
 
