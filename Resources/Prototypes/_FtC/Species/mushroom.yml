@@ -39,6 +39,7 @@
     HeadTop:
       points: 1
       required: true
+      defaultMarkings: [ MushroomCap ]
 
 - type: humanoidBaseSprite
   id: MobMushroomEyes
