@@ -8,8 +8,18 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: minimush
-      sprite: _FtC/Mobs/Animals/minimush.rsi #
+      sprite: _FtC/Mobs/Animals/minimush.rsi
+      state: minimush_color
+    - map: [ "outline" ]
+      sprite: _FtC/Mobs/Animals/minimush.rsi
+      state: minimush_cap
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: minimush_color
+    noMovementLayers:
+      movement:
+        state: minimush_color #
   - type: Physics
   - type: Fixtures
     fixtures:
