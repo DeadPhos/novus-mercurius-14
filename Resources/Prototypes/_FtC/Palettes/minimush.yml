@@ -1,0 +1,19 @@
+- type: palette
+  id: MushroomColors
+  name: MushroomColors
+  colors:
+    MushroomA: "#E6D5C3"
+    MushroomB: "#D4B999"
+    MushroomC: "#B38B6D"
+    MushroomD: "#9C6D4A"
+    MushroomE: "#7A4F3A"
+    MushroomF: "#5E3D2E"
+    BrightA: "#FF5E5E"
+    BrightB: "#FF8C42"
+    BrightC: "#FFD166"
+    BrightD: "#9CFF5E"
+    BrightE: "#5EFFB7"
+    BrightF: "#5EC8FF"
+    BrightG: "#5E7AFF"
+    BrightH: "#AD5EFF"
+    BrightI: "#FF5EAD"
