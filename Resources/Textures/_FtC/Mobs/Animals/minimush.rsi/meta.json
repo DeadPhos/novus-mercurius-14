@@ -37,7 +37,7 @@
       "name": "minimush_cap_dead"
     },
     {
-      "name": "minimush_cap",
+      "name": "minimush_cap_moving",
       "directions": 4,
       "delays": [
         [
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "name": "minimush_color",
+      "name": "minimush_color_moving",
       "directions": 4,
       "delays": [
         [
@@ -90,6 +90,42 @@
     },
     {
       "name": "minimush_dead"
+    },
+    {
+      "name": "minimush_color",
+      "directions": 4,
+      "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "name": "minimush_cap",
+      "directions": 4,
+      "delays": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ]
     }
   ]
 }
