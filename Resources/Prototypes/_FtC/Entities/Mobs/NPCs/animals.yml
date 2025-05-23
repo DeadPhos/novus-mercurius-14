@@ -13,6 +13,11 @@
     - map: [ "mushroom_cap" ]
       sprite: _FtC/Mobs/Animals/minimush.rsi
       state: minimush_cap
+  - type: RandomSprite
+    getAllGroups: true
+    available:
+      - mushroom_cap:
+          minimush_cap: MushroomColors
   - type: SpriteMovement
     movementLayers:
       movement:
