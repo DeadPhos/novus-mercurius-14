@@ -4,7 +4,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _FtC/Mobs/Species/Mushroom/organs.rsi #
+    sprite: _FtC/Mobs/Species/Mushroom/organs.rsi
   - type: Organ
   - type: Food
   - type: Extractable
@@ -29,7 +29,7 @@
   id: OrganMushroomBrain
   parent: [BaseMushroomOrgan, OrganHumanBrain]
   name: brain
-  description: "The central hub of a diona's pseudo-neurological activity, its root-like tendrils search for its former body."
+  description: " "
   components:
   - type: Item
     size: Small
@@ -67,7 +67,7 @@
   id: OrganMushroomStomach
   parent: BaseMushroomOrgan
   name: stomach
-  description: "The diona's equivalent of a stomach, it reeks of asparagus and vinegar."
+  description: " "
   components:
   - type: Sprite
     state: stomach
@@ -101,7 +101,7 @@
   id: OrganMushroomLungs
   parent: BaseMushroomOrgan
   name: lungs
-  description: "A spongy mess of slimy, leaf-like structures. Capable of breathing both carbon dioxide and oxygen."
+  description: " "
   components:
   - type: Sprite
     state: lungs
@@ -166,9 +166,9 @@
   id: OrganMushroomMiniMushBrain
   parent: MobMushroomMiniMush #
   categories: [ HideSpawnMenu ]
-  name: diona nymph
+  name: mushroom nymph
   suffix: Brain
-  description: Contains the brain of a formerly fully-formed Diona. Killing this would kill the Diona forever. You monster.
+  description: Contains the brain of a formerly fully-formed Mushroom. Killing this would kill the Mushroom forever. You monster.
   components:
   - type: IsDeadIC
   - type: Body
@@ -178,9 +178,9 @@
   id: OrganMushroomMiniMushStomach
   parent: MobMushroomMiniMushAccent #
   categories: [ HideSpawnMenu ]
-  name: diona nymph
+  name: mushroom nymph
   suffix: Stomach
-  description: Contains the stomach of a formerly fully-formed Diona. It doesn't taste any better for it.
+  description: Contains the stomach of a formerly fully-formed Mushroom. It doesn't taste any better for it.
   components:
   - type: IsDeadIC
   - type: Body
@@ -190,9 +190,9 @@
   id: OrganMushroomMiniMushLungs
   parent: MobMushroomMiniMushAccent #
   categories: [ HideSpawnMenu ]
-  name: diona nymph #
+  name: mushroom nymph #
   suffix: Lungs
-  description: Contains the lungs of a formerly fully-formed Diona. Breathtaking.
+  description: Contains the lungs of a formerly fully-formed Mushroom. Breathtaking.
   components:
   - type: IsDeadIC
   - type: Body
