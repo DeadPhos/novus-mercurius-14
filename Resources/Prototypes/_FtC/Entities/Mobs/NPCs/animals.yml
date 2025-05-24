@@ -53,8 +53,8 @@
         Base: minimush_dead
   - type: Butcherable
     spawned:
-    - id: MaterialWoodPlank1
-      amount: 2
+    - id: FoodMeatMushroom
+      amount: 1
   - type: InteractionPopup
     successChance: 0.7
     interactSuccessString: petting-success-nymph
