@@ -23,7 +23,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-      - id: FoodMeatPlant
+      - id: FoodMeatMushroom
         amount: 5
   - type: Bloodstream
     bloodReagent: Sap

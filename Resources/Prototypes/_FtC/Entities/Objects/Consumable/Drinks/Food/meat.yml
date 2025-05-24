@@ -1,0 +1,15 @@
+- type: entity
+  name: raw mushroom meat
+  parent: FoodMeatRawBase
+  id: FoodMeatMushroom
+  description: Yummy.
+  components:
+  - type: Sprite
+    sprite: _FtC/Objects/Consumable/Food/meat.rsi
+    state: mushmeat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
