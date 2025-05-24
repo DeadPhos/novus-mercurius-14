@@ -1,0 +1,9 @@
+- type: polymorph
+  id: MushMorph
+  configuration:
+    entity: GiantMushroom
+    forced: true
+    transferName: true
+    revertOnDeath: true
+    inventory: Drop
+    cooldown: 160
