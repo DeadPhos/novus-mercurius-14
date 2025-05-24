@@ -154,6 +154,14 @@
             type: Plant
           - !type:ReagentThreshold
             min: 80
+            effects:
+      - !type:Polymorph
+        prototype: MushMorph
+        conditions:
+          - !type:OrganType
+            type: Mushroom
+          - !type:ReagentThreshold
+            min: 80
 
 - type: reagent
   id: Sedin
