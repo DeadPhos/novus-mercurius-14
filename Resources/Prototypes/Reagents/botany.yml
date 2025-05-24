@@ -202,6 +202,14 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 4
+        conditions:
+        - !type:OrganType
+          type: Mushroom
+
 
 - type: reagent
   id: Ammonia
