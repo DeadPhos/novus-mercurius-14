@@ -164,7 +164,7 @@
 # Nymphs that the organs will turn into
 - type: entity
   id: OrganMushroomMiniMushBrain
-  parent: MobMushroomMiniMush #
+  parent: MobMushroomMiniMush
   categories: [ HideSpawnMenu ]
   name: mushroom nymph
   suffix: Brain
@@ -176,7 +176,7 @@
 
 - type: entity
   id: OrganMushroomMiniMushStomach
-  parent: MobMushroomMiniMushAccent #
+  parent: MobMushroomMiniMushAccent
   categories: [ HideSpawnMenu ]
   name: mushroom nymph
   suffix: Stomach
@@ -188,9 +188,9 @@
 
 - type: entity
   id: OrganMushroomMiniMushLungs
-  parent: MobMushroomMiniMushAccent #
+  parent: MobMushroomMiniMushAccent
   categories: [ HideSpawnMenu ]
-  name: mushroom nymph #
+  name: mushroom nymph
   suffix: Lungs
   description: Contains the lungs of a formerly fully-formed Mushroom. Breathtaking.
   components:
