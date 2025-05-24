@@ -1,0 +1,30 @@
+- type: seed
+  id: miniMush
+  name: seeds-minimush-name
+  noun: seeds-noun-seeds
+  displayName: seeds-minimush-display-name
+  plantRsi: _FtC/Objects/Specific/Hydroponics/minimush.rsi
+  packetPrototype: MiniMushSeeds
+  productPrototypes:
+    - MobMushroomMiniMush
+  harvestRepeat: Repeat
+  lifespan: 25
+  maturation: 15
+  production: 6
+  yield: 2
+  potency: 10
+  waterConsumption: 0.60
+  nutrientConsumption: 0.70
+  idealLight: 8
+  idealHeat: 298
+  growthStages: 2
+  splatPrototype: PuddleSplatter
+  chemicals:
+    Cellulose:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Ammonia:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25

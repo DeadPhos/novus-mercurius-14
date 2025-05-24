@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of small mushroom seeds
+  id: MiniMushSeeds
+  components:
+    - type: Seed
+      seedId: miniMush
+    - type: Sprite
+      sprite: _FtC/Objects/Specific/Hydroponics/minimush.rsi
