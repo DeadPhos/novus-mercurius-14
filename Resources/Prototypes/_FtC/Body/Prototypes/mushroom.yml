@@ -1,6 +1,6 @@
 - type: body
-  id: _FtCMushroomBody
-  name: mushroom
+  id: MushroomBody
+  name: "mushroom"
   root: torso
   slots:
     head:

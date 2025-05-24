@@ -8,7 +8,7 @@
   - type: HumanoidAppearance
     species: Mushroom
   - type: Body
-    prototype: _FtCMushroomBody
+    prototype: MushroomBody
     requiredLegs: 2
   - type: Damageable
     damageContainer: Biological
