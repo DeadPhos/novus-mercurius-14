@@ -20,7 +20,12 @@
 - type: damageModifierSet
   id: Mushroom
   coefficients:
-    Blunt: 0.5 #
-    Slash: 0.5 #
-    Heat: 0.5 #
-    Shock: 0.5 #
+    Blunt: 0.2 #
+    Slash: 0.2 #
+    Heat: 0.2 #
+    Shock: 0.2 #
+    Poison: 0.0 #
+    Radiation: 0.2 #
+    Asphyxiation: 0.5 #
+    Bloodloss: 0.2 #
+    Cellular: 0.0 #
