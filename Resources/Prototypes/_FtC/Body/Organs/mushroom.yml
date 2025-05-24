@@ -83,7 +83,7 @@
   - type: Stomach
   - type: Metabolizer
     maxReagents: 6
-    metabolizerTypes: [ Plant ]
+    metabolizerTypes: [ Mushroom ]
     removeEmpty: true
     groups:
       - id: Food
@@ -113,7 +113,7 @@
     removeEmpty: true
     solutionOnBody: false
     solution: "Lung"
-    metabolizerTypes: [ Plant ]
+    metabolizerTypes: [ Mushroom ]
     groups:
     - id: Gas
       rateModifier: 100.0
